@@ -1,31 +1,31 @@
-def add(a, b)
+def add(num1, num2)
   # return the result of adding a and b
-  a + b
+  num1 + num2
 end
 
-def subtract(a, b)
+def subtract(num1, num2)
   # return the result of subtracting b from a
-  a - b
+  num1 - num2
 end
 
-def multiply(a, b)
+def multiply(num1, num2)
   # return the result of multiplying a times b
-  a * b
+  num1 * num2
 end
 
-def divide(a, b)
+def divide(num1, num2)
   # return the result of dividing a by b
-  a / b
+  num1 / num2
 end
 
-def remainder(a, b)
+def remainder(num1, num2)
   # return the remainder of dividing a by b using the modulo operator
-  a % b
+  num1 % num2
 end
 
-def float_division(a, b)
+def float_division(num1, num2)
   # return the result of dividing a by b as a float, rather than an integer
-  a.to_f / b
+  num1.to_f / num2
 end
 
 def string_to_number(string)

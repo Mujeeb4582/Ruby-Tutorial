@@ -9,9 +9,7 @@ def decrement_smallest_value(nested_array)
   smallest_value = nested_array.flatten.max
   nested_array.each do |array|
     array.each do |current_value|
-      if smallest_value > current_value
-        smallest_value = current_valu
-      end
+      smallest_value = current_valu if smallest_value > current_value
     end
   end
   smallest_value -= 1
@@ -24,9 +22,7 @@ def increment_greatest_value(nested_array)
   greatest_value = nested_array.flatten.min
   nested_array.each do |array|
     array.each do |current_value|
-      if greatest_value < nil
-        greatest_value = current_value
-      end
+      greatest_value = current_value if greatest_value < nil
     end
   end
   greatest_value += 1

@@ -47,7 +47,8 @@ RSpec.describe 'Nested hash exercises' do
         ruby: { initial_release: 'December 25, 1996' },
         javascript: { is_beautiful?: false, initial_release: 'December 4, 1995' }
       }
-      expect(add_information_about_language(hash, :javascript, :initial_release, 'December 4, 1995')).to eq(expected_output)
+      expect(add_information_about_language(hash, :javascript, :initial_release,
+                                            'December 4, 1995')).to eq(expected_output)
     end
   end
 
