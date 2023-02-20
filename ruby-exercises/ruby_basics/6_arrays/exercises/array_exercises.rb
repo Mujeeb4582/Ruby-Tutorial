@@ -15,12 +15,11 @@ end
 
 def last_three_elements(array)
   # return the last 3 elements of the array
-  unless array.size < 3
-    array[2..-1]
-  else
+  if array.size < 3
     array
+  else
+    array[2..]
   end
-
 end
 
 def add_element(array)
